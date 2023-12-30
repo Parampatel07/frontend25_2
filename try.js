@@ -1,22 +1,21 @@
 /**
- * @param {string} str1
- * @param {string} str2
- * @return {string}
+ * @param {number[]} nums
+ * @return {number[]}
  */
-var kidsWithCandies = function (candies, extraCandies) {
+var productExceptSelf = function (nums) {
+     nums = [-1,1,0,-3,3];
+     let answer = [];
+     let temp = 1;
 
-     candies = [2, 3, 5, 1, 3];
-     extraCandies = 3;
-     output = []
-     max_number = parseInt(Math.max.apply(Math, candies));
-     candies.forEach(element => {
-          if (element + extraCandies >= max_number) {
-               output.push(true);
+     for (let flash = 0; flash < 4; flash++) {
+          for (let count = 0; count < 4; count++) {
+               if (flash != count) {
+                    temp = temp * nums[count];
+               }
           }
-          else {
-               output.push(false);
-          }
-     });
-     return(output);
+          answer[flash] = temp;
+          temp = 1;
+     }
+     console.log(answer);
 };
-kidsWithCandies()
+productExceptSelf('');
