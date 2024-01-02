@@ -38,6 +38,5 @@ app.get('/info/:name/:email', function (request, response) {
 
      response.send(`<h1>hello ${name} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; this is your ${email}</h1>`)
 });
-
 app.listen(5000);
 console.log("server ready ");
