@@ -3,7 +3,7 @@
 // password = "123123"
 var express = require('express');
 var app = express();
-var bodyParese = require('body-parser');
+var bodyParese = require('body-parser'  );
 app.use(express.json());
 app.post("/login", function (request, response) {
      let email = request.body.email;

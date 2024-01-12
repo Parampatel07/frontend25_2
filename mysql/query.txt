@@ -1,0 +1,11 @@
+SELECT : - SELECT * from students 
+|| Select column_name from table_name where condition 
+
+Insert : - Insert into students (name,age) values ('param',19)
+||  INsert into table_name (column_name,column_name) values (value)
+
+Update : - Update students set age = 19 where id = 1 
+|| Update table_name set column_name = value where condition
+
+Delete : - Delete from students where id = 1 
+|| Delete from table_name where condition 
