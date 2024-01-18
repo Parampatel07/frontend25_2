@@ -11,7 +11,7 @@ app.get('/students', function (request, response) {
           }
           else {
                let json_data = JSON.parse(JSON.stringify(result));
-               response.json( json_data );
+               response.json(json_data);
           }
      });
      connection.connection.end();

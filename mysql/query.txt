@@ -9,3 +9,12 @@ Update : - Update students set age = 19 where id = 1
 
 Delete : - Delete from students where id = 1 
 || Delete from table_name where condition 
+
+Create a customer api will show 
+-> name,phone,country,creditlimit for all customer in usa 
+
+Create a api to add payment in payment table (post)
+
+Create a api to delete orders on given date 
+
+Create a api to update msrp of given product 
