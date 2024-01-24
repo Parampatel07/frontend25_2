@@ -18,3 +18,12 @@ Create a api to add payment in payment table (post)
 Create a api to delete orders on given date 
 
 Create a api to update msrp of given product 
+
+
+Write a programe to create connection with mysql 
+
+Write a programe to bring data from monogodb of customer with number 1010 
+
+Write a programe to insert data in monogodb with filed name , age , gender , date , email in employee collection 
+
+Write a programe to delete payment with given id from mysql table payments

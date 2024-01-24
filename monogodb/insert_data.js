@@ -7,7 +7,7 @@ async function addStudent() {
                'name': 'bharat',
                'age': 20,
                'gender': "Male",
-               'email': 'bharat@gmail.com'
+               'email': 'bharat@gmail.com',
           }
           database.collection("students").insertOne(data).then(function (error, result) {
                if (error == true) {
