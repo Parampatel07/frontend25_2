@@ -6,9 +6,7 @@ app.put("/students/:name/:age", async function (request, response) {
 
      let name = request.params.name;
      let age = request.params.age;
-
      console.log(`name is ${name} and age is ${age}`);
-
      await connection.client.connect();
      let database = connection.client.db("frontend25");
      let search = { 'name': name };

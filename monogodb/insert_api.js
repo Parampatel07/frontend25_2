@@ -4,10 +4,9 @@ var app = express();
 var bodyParser = require('body-parser');
 
 app.use(express.json());
-// app.use(express.urlencoded({ extended: true }));
+app.use(express.urlencoded({ extended: false }));
 
 app.post("/students", async function (request, response) {
-
      let name = request.body.name;
      let age = request.body.age;
      let email = request.body.email;
