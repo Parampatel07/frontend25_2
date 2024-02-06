@@ -1,10 +1,12 @@
 {
   "dependencies": {
     "body-parser": "^1.20.2",
+    "create-react-app": "^5.0.1",
     "express": "^4.18.2",
     "mongodb": "^6.3.0",
     "mysql": "^2.18.1",
     "pug": "^3.0.2",
+    "react": "^18.2.0",
     "sync-request": "^6.1.0"
   }
 }
