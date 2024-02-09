@@ -90,20 +90,20 @@ function Menu() {
   )
 }
 
-function Page(props) {
+function Page() {
   return (
     <>
       {/* <Menu /> */}
-      <div className="container">
+      <div className="container" style={{ height: "500px" }}>
         <div className="row">
-          <div className={props.colum}>
-            <Card name="Param Patel" color='text-bg-danger' />
+          <div className="col-4">
+            <Card />
           </div>
-          <div className={props.colum}>
-            <Card name="Vivek " color='text-bg-dark' />
+          <div className="col-4">
+            <Card />
           </div>
-          <div className={props.colum}>
-            <Card name="Vishal" color='text-bg-warning' desc='this is paragraph ' />
+          <div className="col-4">
+            <Card />
           </div>
         </div>
       </div>
@@ -111,13 +111,16 @@ function Page(props) {
   );
 }
 
-function Card(props) {
+function Card() {
   return (<>
     <div className="card mt-5 shadow">
-      <div className={`card-header h2 ` + props.color} >{props.name}</div>
+      <div className="card-header h2 text-bg-success">Student Data</div>
       <div className="card-body">
         <p>
-          {props.desc}
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Recusandae quos officiis incidunt? Mollitia dolorem, odit
+          delectus iusto, atque corporis quisquam omnis cupiditate nihil
+          nostrum fugit quasi dolor quis doloremque quidem!
         </p>
       </div>
     </div>
@@ -143,9 +146,7 @@ function Output() {
   return (
     <>
       <Menu />
-      <Page colum='col-3'/>
-      <Page colum='col-4'/>
-      <Page colum='col-6'/>
+      <Page />
       <Footer />
     </>
   )
