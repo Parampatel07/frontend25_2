@@ -44,7 +44,6 @@ export default class Theater extends React.Component {
           draggable
           pauseOnHover
           theme="dark"
-          
         />
         <div className="card mt-5 shadow">
           <div className="card-header text-bg-success">

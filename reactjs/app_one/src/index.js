@@ -4,6 +4,7 @@ import Output from "./example1";
 import Example2 from "./example2";
 import Game from "./example3";
 import Theater from "./example4";
+import Example5 from "./example5";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 let number = 10;
@@ -14,7 +15,7 @@ class Page extends React.Component {
       <>
         <div className="container">
           <div className="row">
-            <Theater />
+            <Example5 />
           </div>
         </div>
       </>
