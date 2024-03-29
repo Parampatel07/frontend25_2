@@ -35,6 +35,11 @@ export default function Common() {
                   blogs
                 </Link>
               </li>
+              <li className="nav-item">
+                <Link className="nav-link" to="/contact">
+                  Contact Us
+                </Link>
+              </li>
               <li className="nav-item dropdown">
                 <a
                   className="nav-link dropdown-toggle"
